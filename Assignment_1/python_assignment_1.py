@@ -1,14 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[34]:
-
 
 import numpy as np
 import matplotlib.pyplot as plt
-
-
-# In[35]:
 
 
 # Q6. Prove that the points (2, 4), (3, 2), (8, 4) and (7, 6) are the vertices of a parallelogram.
@@ -34,9 +29,6 @@ else:
     print('Here Opposite sides  are not parallel  \n Thus, ABCD does not form a parallelogram.')
 
 
-# In[36]:
-
-
 #Generate line points
 def line_gen(A,B):
     len =10
@@ -49,18 +41,12 @@ def line_gen(A,B):
     return x_AB
 
 
-# In[37]:
-
-
 # Generating all lines
 
 x_AB = line_gen(A, B)
 x_BC = line_gen(B, C)
 x_CD = line_gen(C, D)
 x_DA = line_gen(D, A)
-
-
-# In[38]:
 
 
 plt.plot(x_AB[0,:],x_AB[1,:],label='$AB$')
@@ -79,10 +65,4 @@ plt.xlabel('$x-axis$')
 plt.grid() 
 plt.savefig('parallelogram.jpg', dpi=200)
 plt.show()
-
-
-# In[ ]:
-
-
-
 
